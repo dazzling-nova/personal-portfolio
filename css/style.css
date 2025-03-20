@@ -1,0 +1,246 @@
+/****************
+    HEADER/NAVIGATION
+****************/
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.8rem;
+  width: 40rem;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 999px;
+}
+
+.sticky.header {
+  position: fixed;
+  top: 3.2rem;
+  bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 2px solid #094760;
+  /* background-color: #094760; */
+  backdrop-filter: blur(10px);
+
+  z-index: 999;
+}
+
+.header .main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.4rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #e7f4f9;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #88c7df;
+}
+
+/****************
+    HERO SECTION
+****************/
+
+.section-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6.4rem;
+
+  height: 100vh;
+  max-width: 100vw;
+  width: 100vw;
+
+  background-image: linear-gradient(#020e13cb, #020e1358),
+    url(../images/hero-bg.jpg);
+  background-size: cover;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  text-align: center;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  max-width: 48rem;
+}
+
+.hero-cta:link,
+.hero-cta:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #e7f4f9;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+
+  background-color: #094760;
+  padding: 1.2rem 1.8rem;
+  border-radius: 999px;
+}
+
+.hero-cta:hover,
+.hero-cta:active {
+  color: #fff;
+  background-color: #58b0d2;
+}
+
+/****************
+    ABOUT SECTION
+****************/
+
+.section-about {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.section-about * {
+  flex: 1 1 0px;
+}
+
+.section-about .about-paragraph {
+  margin-bottom: 2.4rem;
+}
+
+.section-about .social-media-links {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 6rem;
+}
+
+.section-about .social-media-links .social-icon {
+  color: #88c7df;
+  font-size: 4.8rem;
+  transition: all 0.3s;
+}
+
+.section-about .social-media-links .social-icon:hover {
+  color: #0f80ac;
+  font-size: 4.8rem;
+}
+
+/****************
+    PROJECTS SECTION
+****************/
+
+.section-projects {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.section-projects * {
+  flex: 1 1 0px; /* all items get the same size*/
+}
+
+.section-projects .project-cards {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  align-items: center;
+}
+
+.project-cards .project-card {
+  background-color: #094760;
+  /* background-image: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
+  background-size: 200% auto; */
+
+  padding: 2.4rem;
+  border-radius: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  display: flex;
+  gap: 3.6rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-cards .project-card:hover {
+  transform: translateX(-1.2rem);
+  background-position: right center;
+}
+
+.project-card .project-img-box,
+.project-card .project-card-text {
+  flex: 1 1 18rem;
+}
+
+.project-card .project-img {
+  border-radius: 1.4rem;
+  width: 100%;
+}
+
+.project-card .heading-tertiary {
+  font-size: 3.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.project-card .project-tags {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3.2rem;
+  flex-wrap: wrap;
+}
+
+.project-card .project-tag {
+  border-radius: 999px;
+  background-color: #f2a30f;
+  height: 2rem;
+  max-width: fit-content;
+  font-size: 1.2rem;
+  padding: 0.8rem;
+  color: #020e13;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/****************
+    FOOTER
+****************/
+
+.footer {
+  padding-top: 4.8rem;
+  margin-bottom: 6.4rem;
+  border-top: 2px solid #0947608c;
+}
+
+.footer-text {
+  margin-bottom: 0;
+}
+
+.footer-text .copyright {
+  font-size: 1.4rem;
+}

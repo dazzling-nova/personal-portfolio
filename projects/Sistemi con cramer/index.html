@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Cramer System Solver</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="heading-primary">System Calculator</h1>
+      <p class="subtitle">by David Leidi</p>
+    </header>
+
+    <nav class="nav">
+      <ul class="nav-links">
+        <li><a href="#" id="link1" class="nav-link selected-page">2 unknowns</a></li>
+        <li><a href="#" id="link2" class="nav-link">3 unknowns</a></li>
+      </ul>
+    </nav>
+
+    <main class="section-main">
+      <h2 class="heading-secondary top-left">Insert the data</h2>
+
+      <form id="form1" class="form grid--2-cols">
+        <div>
+          <label for="a1">a1:</label>
+          <input id="input1" type="number" name="a1">
+        </div>
+
+        <div>
+          <label for="a2">a2:</label>
+          <input id="input2" type="number" name="a2">
+        </div>
+
+        <div>
+          <label for="b1">b1:</label>
+          <input id="input3" type="number" name="b1">
+        </div>
+
+        <div>
+          <label for="b2">b2:</label>
+          <input id="input4" type="number" name="b2">
+        </div>
+
+        <div>
+          <label for="c1">c1:</label>
+          <input id="input5" type="number" name="c1">
+        </div>
+
+        <div>
+          <label for="c2">c2:</label>
+          <input id="input6" type="number" name="c2">
+        </div>
+
+        <button type="submit" class="button-submit">Calculate</button>
+      </form>
+
+      <form id="form2" class="form grid--3-cols hidden-form">
+        <div>
+          <label for="a1">a1:</label>
+          <input id="input7" type="number" name="a1">
+        </div>
+
+        <div>
+          <label for="a2">a2:</label>
+          <input id="input8" type="number" name="a2">
+        </div>
+
+        <div>
+          <label for="a3">a3:</label>
+          <input id="input9" type="number" name="a2">
+        </div>
+
+        <div>
+          <label for="b1">b1:</label>
+          <input id="input10" type="number" name="b1">
+        </div>
+
+        <div>
+          <label for="b2">b2:</label>
+          <input id="input11" type="number" name="b2">
+        </div>
+
+        <div>
+          <label for="b3">b3:</label>
+          <input id="input12" type="number" name="a2">
+        </div>
+
+        <div>
+          <label for="c1">c1:</label>
+          <input id="input13" type="number" name="c1">
+        </div>
+
+        <div>
+          <label for="c2">c2:</label>
+          <input id="input14" type="number" name="c2">
+        </div>
+
+        <div>
+          <label for="c3">c3:</label>
+          <input id="input15" type="number" name="a2">
+        </div>
+
+        <div>
+          <label for="d1">d1:</label>
+          <input id="input16" type="number" name="a2">
+        </div>
+
+        <div>
+          <label for="d2">d2:</label>
+          <input id="input17" type="number" name="a2">
+        </div>
+
+        <div>
+          <label for="d3">d3:</label>
+          <input id="input18" type="number" name="a2">
+        </div>
+
+        <button type="submit" class="button-submit">Calculate</button>
+      </form>
+
+      <h2 class="heading-secondary top-right">Here's your result</h2>
+      <div class="result">
+        <p id="result1" class="result-text">x = -</p>
+        <p id="result2" class="result-text">y = -</p>
+        <p id="result3" class="result-text hidden-result">z = -</p>
+      </div>
+    </main>
+  </div>
+
+
+  <script typer="module" src="main.js"></script>
+</body>
+
+</html>
